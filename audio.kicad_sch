@@ -1728,16 +1728,6 @@
 		)
 		(uuid "042e0735-c784-43e3-a793-1e046df28981")
 	)
-	(text "DAC is not getting power"
-		(exclude_from_sim no)
-		(at 49.784 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0d4f66e0-1625-46f1-a8e8-0ce81c5b57f1")
-	)
 	(text "We should select the max gain we want for 3.3v"
 		(exclude_from_sim no)
 		(at 208.28 56.388 0)
@@ -1757,6 +1747,16 @@
 			)
 		)
 		(uuid "a29da7c5-ce98-48dc-9c80-17f7d307c2c3")
+	)
+	(text "Forgot decoupling cap"
+		(exclude_from_sim no)
+		(at 234.95 64.262 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b3fea00e-2f14-4085-a702-6ecce48ba3a3")
 	)
 	(text "DAC >> Trim controlled voltage divider >> Amplifier"
 		(exclude_from_sim no)
@@ -1791,6 +1791,30 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5276ddfa-48fd-4adb-afaa-a3adb2454d19")
+	)
+	(junction
+		(at 53.34 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "681cf5db-14e8-4f8f-a4bc-39d7c4f757af")
+	)
+	(junction
+		(at 27.94 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5513d51-71f0-43c6-869a-96f9164c44c3")
+	)
+	(junction
+		(at 50.8 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1071cbb-861d-4d34-9beb-bc294e59044a")
+	)
+	(junction
+		(at 55.88 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7fd2da4-9810-47be-9cb5-89ebc3b1c35f")
 	)
 	(junction
 		(at 83.82 109.22)
@@ -1889,6 +1913,16 @@
 			(type default)
 		)
 		(uuid "2bec0af9-0952-4d95-8463-eff664444835")
+	)
+	(wire
+		(pts
+			(xy 50.8 66.04) (xy 50.8 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ebb87b4-25b3-449e-b6ff-fa2749705919")
 	)
 	(wire
 		(pts
@@ -2152,13 +2186,13 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 67.31) (xy 46.99 71.12)
+			(xy 55.88 66.04) (xy 55.88 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b61c0640-b3f1-4be3-88e9-286538424591")
+		(uuid "b49d4197-70f8-402d-9d5b-be23337f159a")
 	)
 	(wire
 		(pts
@@ -2169,6 +2203,16 @@
 			(type default)
 		)
 		(uuid "bd18c931-5101-403c-9503-a2d0aef745f9")
+	)
+	(wire
+		(pts
+			(xy 53.34 50.8) (xy 53.34 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be89ebda-14fb-418e-8760-13d562b76dd3")
 	)
 	(wire
 		(pts
@@ -2209,6 +2253,16 @@
 			(type default)
 		)
 		(uuid "d214925b-2ca8-47a8-a4fb-3258f2b34e98")
+	)
+	(wire
+		(pts
+			(xy 27.94 106.68) (xy 40.64 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d26e3e85-8f37-499c-a52f-2a5ddf33f15a")
 	)
 	(wire
 		(pts
@@ -2272,7 +2326,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 106.68) (xy 40.64 106.68)
+			(xy 25.4 106.68) (xy 27.94 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2289,6 +2343,50 @@
 			(type default)
 		)
 		(uuid "fb6da706-e9f6-4a59-82a8-fc12c665da7c")
+	)
+	(global_label "3.3V"
+		(shape input)
+		(at 53.34 50.8 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01d781e8-b378-4922-becb-c6d91cccfb32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 43.7024 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3.3V"
+		(shape input)
+		(at 27.94 114.3 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0be341fc-e6bf-4961-bdc4-7022ab07e67e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 27.94 121.3976 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "3.3V"
 		(shape input)
@@ -2466,6 +2564,50 @@
 			)
 		)
 	)
+	(global_label "3.3V"
+		(shape input)
+		(at 55.88 66.04 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bc9ed776-0a9a-40ea-be64-e1f4ba84473e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 55.88 58.9424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "3.3V"
+		(shape input)
+		(at 50.8 66.04 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c6b2f501-ffec-4f68-93d7-4d0a8312ec45")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.8 58.9424 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "I2S_WSEL"
 		(shape input)
 		(at 40.64 88.9 180)
@@ -2512,7 +2654,7 @@
 	)
 	(global_label "PCM_MUTE"
 		(shape input)
-		(at 30.48 106.68 180)
+		(at 25.4 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2522,13 +2664,83 @@
 		)
 		(uuid "f81799d2-7d59-46dd-9166-731d28a652d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 17.6373 106.68 0)
+			(at 12.5573 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 27.94 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01887aac-9820-4a22-8aab-4089aa807c77")
+		(property "Reference" "R18"
+			(at 30.48 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 30.48 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 28.956 110.744 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 27.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c99753e1-ba84-4fa3-b1ee-a866d9e052aa")
+		)
+		(pin "1"
+			(uuid "81b15025-f76c-4199-befd-781c734f6d9d")
+		)
+		(instances
+			(project ""
+				(path "/2896dee3-6a7b-4c29-91fd-fee2643a201f/ddbccc95-449d-4361-b87d-6c63edbfe13d"
+					(reference "R18")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3951,7 +4163,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8448cb1d-def3-4bb5-b98d-bc107a31e0da")
 		(property "Reference" "#PWR028"
 			(at 34.29 109.22 0)
@@ -3963,7 +4174,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 109.2199 90)
+			(at 39.878 111.506 90)
 			(effects
 				(font
 					(size 1.27 1.27)

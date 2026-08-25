@@ -1261,16 +1261,6 @@
 		)
 		(uuid "7a4a54bf-d38f-42c0-a6d1-fd0e664caf5b")
 	)
-	(text "missing"
-		(exclude_from_sim no)
-		(at 84.836 122.428 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8d0f884f-d489-4210-a07b-65045e465ad4")
-	)
 	(text "INPUT\n"
 		(exclude_from_sim no)
 		(at 113.538 83.566 0)
@@ -1336,10 +1326,22 @@
 		(uuid "65f36eed-d3cf-4585-920b-0b904f4370bd")
 	)
 	(junction
+		(at 83.82 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75d3b3b9-110d-4609-848a-6d56d4c43353")
+	)
+	(junction
 		(at 76.2 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "784a02bd-d2a7-4329-888b-511f47805b48")
+	)
+	(junction
+		(at 83.82 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c52f273-8821-42d8-a448-862104806f80")
 	)
 	(junction
 		(at 124.46 59.69)
@@ -1832,6 +1834,16 @@
 			(type default)
 		)
 		(uuid "5a122ce7-d6b9-4ed1-984c-7565a23394ac")
+	)
+	(wire
+		(pts
+			(xy 83.82 114.3) (xy 83.82 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b7e4819-0877-40ad-aed3-141c0935c038")
 	)
 	(wire
 		(pts
@@ -3433,7 +3445,7 @@
 			)
 		)
 	)
-	(global_label "3V"
+	(global_label "3.3V"
 		(shape input)
 		(at 52.07 171.45 180)
 		(fields_autoplaced yes)
