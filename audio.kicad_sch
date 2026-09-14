@@ -1730,7 +1730,7 @@
 	)
 	(text "We should select the max gain we want for 3.3v"
 		(exclude_from_sim no)
-		(at 208.28 56.388 0)
+		(at 187.706 56.896 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1747,16 +1747,6 @@
 			)
 		)
 		(uuid "a29da7c5-ce98-48dc-9c80-17f7d307c2c3")
-	)
-	(text "Forgot decoupling cap"
-		(exclude_from_sim no)
-		(at 234.95 64.262 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b3fea00e-2f14-4085-a702-6ecce48ba3a3")
 	)
 	(text "DAC >> Trim controlled voltage divider >> Amplifier"
 		(exclude_from_sim no)
@@ -1827,6 +1817,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e23a3ebb-8d96-4534-ae58-1fe5dff778f6")
+	)
+	(junction
+		(at 220.98 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2682873-15c1-4b8e-9190-53dc281b0ba5")
 	)
 	(junction
 		(at 83.82 91.44)
@@ -2073,6 +2069,26 @@
 			(type default)
 		)
 		(uuid "69744a7f-2932-4f0c-988f-6c6b4d351351")
+	)
+	(wire
+		(pts
+			(xy 220.98 55.88) (xy 220.98 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ae8ef01-6186-45a9-a5f0-fd2d7fc92f63")
+	)
+	(wire
+		(pts
+			(xy 220.98 59.69) (xy 220.98 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca25dc7-01de-4e76-bae4-f57c83963862")
 	)
 	(wire
 		(pts
@@ -2500,7 +2516,7 @@
 	)
 	(global_label "3.3V"
 		(shape input)
-		(at 220.98 68.58 90)
+		(at 220.98 55.88 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2510,7 +2526,7 @@
 		)
 		(uuid "8cc56ded-7005-4b81-86ce-12ac3f790562")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 220.98 62.0872 90)
+			(at 220.98 49.3872 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2702,7 +2718,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 28.956 110.744 90)
 			(effects
 				(font
@@ -2769,7 +2785,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 197.104 75.184 90)
 			(effects
 				(font
@@ -2968,7 +2984,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 73.3552 119.38 0)
 			(effects
 				(font
@@ -3037,7 +3053,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 239.7252 93.98 0)
 			(effects
 				(font
@@ -3147,6 +3163,141 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 228.6 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24688d0f-c1f5-471b-ba1a-f9c3bfe41761")
+		(property "Reference" "#PWR024"
+			(at 234.95 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 59.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 228.6 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d6f884b-0952-4849-ad69-c9f83a04fe2b")
+		)
+		(instances
+			(project "wav_man_dev_board_v1"
+				(path "/2896dee3-6a7b-4c29-91fd-fee2643a201f/ddbccc95-449d-4361-b87d-6c63edbfe13d"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 224.79 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b45a0de-3042-4e13-b1d6-de3e7bec4a31")
+		(property "Reference" "C27"
+			(at 224.79 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 224.79 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 228.6 58.7248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 224.79 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6d214b94-2638-44d4-a4e0-3ff30911bbbe")
+		)
+		(pin "1"
+			(uuid "35b16d30-7a67-4761-9191-a072e87daec7")
+		)
+		(instances
+			(project "wav_man_dev_board_v1"
+				(path "/2896dee3-6a7b-4c29-91fd-fee2643a201f/ddbccc95-449d-4361-b87d-6c63edbfe13d"
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 40.64 104.14 270)
 		(mirror x)
 		(unit 1)
@@ -3241,7 +3392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 210.566 90.424 90)
 			(effects
 				(font
@@ -3441,7 +3592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 65.7352 60.96 0)
 			(effects
 				(font
@@ -3509,7 +3660,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 46.0248 74.93 0)
 			(effects
 				(font
@@ -3779,7 +3930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 84.7852 88.9 0)
 			(effects
 				(font
@@ -3979,7 +4130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 77.1652 74.93 0)
 			(effects
 				(font
@@ -4113,7 +4264,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 76.454 92.456 90)
 			(effects
 				(font
@@ -4326,7 +4477,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 191.77 75.2348 0)
 			(effects
 				(font
@@ -4784,7 +4935,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 84.7852 119.38 0)
 			(effects
 				(font
@@ -4984,7 +5135,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 191.77 80.3148 0)
 			(effects
 				(font
@@ -5116,7 +5267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 65.7352 74.93 0)
 			(effects
 				(font
@@ -5275,7 +5426,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 69.5452 104.14 0)
 			(effects
 				(font
@@ -5342,7 +5493,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 96.2152 119.38 0)
 			(effects
 				(font
@@ -5476,7 +5627,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 34.5948 74.93 0)
 			(effects
 				(font
@@ -5543,7 +5694,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 76.454 87.884 90)
 			(effects
 				(font
@@ -5614,7 +5765,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 84.7852 91.44 0)
 			(effects
 				(font
@@ -5815,7 +5966,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 197.104 80.264 90)
 			(effects
 				(font
@@ -6014,7 +6165,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 77.1652 60.96 0)
 			(effects
 				(font
