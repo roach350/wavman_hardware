@@ -3833,6 +3833,16 @@
 		)
 		(uuid f6f30cc7-3c73-406c-a357-6947633946da)
 	)
+	(text "Power is not supplied via USB"
+		(exclude_from_sim no)
+		(at 265.684 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1423ffad-c56e-468a-b30b-e49d67b49e31")
+	)
 	(text "SWCLK and SWDIO for flashing"
 		(exclude_from_sim no)
 		(at 46.228 181.864 0)
@@ -3962,6 +3972,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f33a7080-6875-49a2-9458-74089291921c")
+	)
+	(no_connect
+		(at 255.27 109.22)
+		(uuid "4b380c21-7c25-4186-a9c3-1235ab004d9e")
+	)
+	(no_connect
+		(at 255.27 104.14)
+		(uuid "771c06f5-786c-41de-842d-044aca861d6c")
+	)
+	(no_connect
+		(at 255.27 111.76)
+		(uuid "e635307f-762e-43a2-add0-097972a7e57e")
 	)
 	(wire
 		(pts
